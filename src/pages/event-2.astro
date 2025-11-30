@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Event 2: Postsecondary Efforts">
+  <div class="event-header">
+    <span class="event-label">Event 2</span>
+    <h1>Postsecondary Efforts</h1>
+    <p class="event-date">March 2026 | Virtual Event</p>
+  </div>
+
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      A "Lessons from the Field" event focusing on three cases of postsecondary efforts to offer 
+      programming and degree opportunities in data science and artificial intelligence. This event 
+      is targeted toward higher education faculty and administrators, showcasing multiple pathways 
+      to build data science and AI programs at both undergraduate and graduate levels.
+    </p>
+  </section>
+
+  <section class="topics">
+    <h2>Discussion Topics</h2>
+    <ul>
+      <li>How do different institutions define 'entry points' for data science and AI in higher education?</li>
+      <li>What institutional needs, constraints, or opportunities spurred different program choices?</li>
+      <li>What lessons emerge when comparing challenges across contexts?</li>
+      <li>How can institutions learn from each other's unexpected obstacles to build stronger long-term models?</li>
+      <li>What collaborative steps might help bridge undergraduate preparation with graduate training across institutions?</li>
+    </ul>
+  </section>
+
+  <section class="audience">
+    <h2>Who Should Attend</h2>
+    <p>This event is designed for:</p>
+    <ul>
+      <li>Higher education faculty and administrators</li>
+      <li>Program directors and curriculum developers</li>
+      <li>Academic department chairs and deans</li>
+      <li>Anyone involved in developing data science and AI programs</li>
+    </ul>
+  </section>
+
+  <section class="registration">
+    <div class="registration-box">
+      <h2>Register for Event 2</h2>
+      <p>Registration will open soon. Join our mailing list to be notified when registration is available.</p>
+      <a href="#" class="btn-large">Join Mailing List</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .event-header {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 3rem;
+  }
+
+  .event-label {
+    display: inline-block;
+    background: #9b59b6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .event-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-date {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #9b59b6;
+    padding-bottom: 0.5rem;
+  }
+
+  .overview p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #495057;
+  }
+
+  .topics ul,
+  .audience ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .topics li,
+  .audience li {
+    padding: 1rem 1rem 1rem 2.5rem;
+    margin-bottom: 0.75rem;
+    background: #f8f9fa;
+    border-left: 4px solid #9b59b6;
+    position: relative;
+  }
+
+  .topics li::before,
+  .audience li::before {
+    content: "→";
+    position: absolute;
+    left: 1rem;
+    color: #9b59b6;
+    font-weight: bold;
+  }
+
+  .registration {
+    margin-top: 4rem;
+  }
+
+  .registration-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .registration-box h2 {
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .registration-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-large {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 768px) {
+    .event-header h1 {
+      font-size: 2rem;
+    }
+
+    .registration-box {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Event 1: National Frameworks and Recommendations">
+  <div class="event-header">
+    <span class="event-label">Event 1</span>
+    <h1>National Frameworks and Recommendations</h1>
+    <p class="event-date">February 2026 | Virtual Event</p>
+  </div>
+
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      Event one explores national frameworks and recommendations for advancing data science and AI education. 
+      This event is designed to appeal to a broad education audience—teachers, administrators, 
+      policymakers, and researchers—by mapping the current terrain of national-level initiatives 
+      and emerging frameworks shaping the future of data science and AI learning.
+    </p>
+  </section>
+
+  <section class="topics">
+    <h2>Discussion Topics</h2>
+    <ul>
+      <li>Where do national frameworks and recommendations converge, and where are there tensions?</li>
+      <li>How might states balance consistency with flexibility when adopting national recommendations?</li>
+      <li>What are potential entry points for states into these frameworks and recommendations?</li>
+      <li>What steps can ensure collaboration among researchers, policymakers, and practitioners moves beyond recommendations and into the classroom?</li>
+    </ul>
+  </section>
+
+  <section class="audience">
+    <h2>Who Should Attend</h2>
+    <p>This event is designed for:</p>
+    <ul>
+      <li>K-12 teachers and administrators</li>
+      <li>Higher education faculty and leaders</li>
+      <li>State and district education personnel</li>
+      <li>Education researchers and policy makers</li>
+      <li>Anyone interested in data science and AI education frameworks</li>
+    </ul>
+  </section>
+
+  <section class="registration">
+    <div class="registration-box">
+      <h2>Register for Event 1</h2>
+      <p>Registration will open soon. Join our mailing list to be notified when registration is available.</p>
+      <a href="#" class="btn-large">Join Mailing List</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- Keep all the same styles from before -->
+<style>
+  .event-header {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 3rem;
+  }
+
+  .event-label {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .event-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-date {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+
+  .overview p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #495057;
+  }
+
+  .topics ul,
+  .audience ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .topics li,
+  .audience li {
+    padding: 1rem 1rem 1rem 2.5rem;
+    margin-bottom: 0.75rem;
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    position: relative;
+  }
+
+  .topics li::before,
+  .audience li::before {
+    content: "→";
+    position: absolute;
+    left: 1rem;
+    color: #3498db;
+    font-weight: bold;
+  }
+
+  .registration {
+    margin-top: 4rem;
+  }
+
+  .registration-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .registration-box h2 {
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .registration-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-large {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 768px) {
+    .event-header h1 {
+      font-size: 2rem;
+    }
+
+    .registration-box {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>

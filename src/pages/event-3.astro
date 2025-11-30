@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Event 3: K-12 Efforts">
+  <div class="event-header">
+    <span class="event-label">Event 3</span>
+    <h1>K-12 Efforts</h1>
+    <p class="event-date">April 2026 | Virtual Event</p>
+  </div>
+
+  <section class="overview">
+    <h2>Overview</h2>
+    <p>
+      Event three focuses on the opportunities to support data science and AI education in the K-12 
+      classroom, school, and district. This event highlights current models and resources to introduce 
+      data science and AI learning opportunities in K-12 settings, featuring both national resources 
+      and local innovative projects.
+    </p>
+  </section>
+
+  <section class="topics">
+    <h2>Discussion Topics</h2>
+    <ul>
+      <li>How can K-12 teachers integrate data science and AI concepts into existing subjects without overburdening curricula?</li>
+      <li>What kinds of supports are available to help teachers take up these new instructional roles?</li>
+      <li>What partnerships are available for districts and schools beginning to explore AI integration?</li>
+      <li>How can schools and districts take small, concrete steps that build toward larger systemic adoption?</li>
+      <li>What is the first step for teachers or schools that want to bring data science into their classrooms?</li>
+    </ul>
+  </section>
+
+  <section class="audience">
+    <h2>Who Should Attend</h2>
+    <p>This event is designed for:</p>
+    <ul>
+      <li>K-12 teachers across all subject areas</li>
+      <li>School administrators and principals</li>
+      <li>District curriculum coordinators and instructional leaders</li>
+      <li>Anyone supporting K-12 data science and AI education</li>
+    </ul>
+  </section>
+
+  <section class="registration">
+    <div class="registration-box">
+      <h2>Register for Event 3</h2>
+      <p>Registration will open soon. Join our mailing list to be notified when registration is available.</p>
+      <a href="#" class="btn-large">Join Mailing List</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .event-header {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 3rem;
+  }
+
+  .event-label {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .event-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-date {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 0.5rem;
+  }
+
+  .overview p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #495057;
+  }
+
+  .topics ul,
+  .audience ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .topics li,
+  .audience li {
+    padding: 1rem 1rem 1rem 2.5rem;
+    margin-bottom: 0.75rem;
+    background: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    position: relative;
+  }
+
+  .topics li::before,
+  .audience li::before {
+    content: "→";
+    position: absolute;
+    left: 1rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+
+  .registration {
+    margin-top: 4rem;
+  }
+
+  .registration-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .registration-box h2 {
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .registration-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-large {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 768px) {
+    .event-header h1 {
+      font-size: 2rem;
+    }
+
+    .registration-box {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>

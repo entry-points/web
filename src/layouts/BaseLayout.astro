@@ -1,0 +1,112 @@
+---
+// This is the "frontmatter" - JavaScript that runs at build time
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | Entry Points</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Entry Points</h1>
+          <p class="tagline">Pathways and Possibilities to Support Student Learning about Data and AI</p>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/event-1">Event 1</a></li>
+          <li><a href="/event-2">Event 2</a></li>
+          <li><a href="/event-3">Event 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <slot />  <!-- This is where page content goes -->
+  </main>
+
+  <footer>
+    <p>&copy; 2026 University of Tennessee, Knoxville. All rights reserved.</p>
+  </footer>
+</body>
+
+<style>
+  /* Basic styling - you'll customize this later */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  .nav-links a:hover {
+    opacity: 0.8;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: calc(100vh - 200px);
+  }
+
+  footer {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #dee2e6;
+  }
+</style>
+</html>
