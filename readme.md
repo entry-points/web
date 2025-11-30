@@ -9,7 +9,7 @@ This webinar series brings together national leaders, researchers, and practitio
 ### Series Events
 
 **Event 1: National and State Efforts** (February 2026)  
-Exploring national frameworks and state-level initiatives for advancing data science and AI education.
+Exploring national frameworks and initiatives for advancing data science and AI education.
 
 **Event 2: Postsecondary Efforts** (March 2026)  
 A "Lessons from the Field" event showcasing university programs and degree pathways in data science and AI.
@@ -32,13 +32,13 @@ Highlighting opportunities to support data science and AI education in classroom
 - White papers synthesizing key discussions
 - Mailing list signup for ongoing updates
 
-
 ## Contact
 
 For questions about the Entry Points series, please contact:
 
 **University of Tennessee, Knoxville**  
 College of Education, Health, and Human Sciences
+Computing, AI, and Data in Educational Systems (CADES) Center
 cades@utk.edu
 
 ## Acknowledgments
